@@ -1,0 +1,33 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Hunga9k50doker/nodejs_blog.git"
+  },
+  "keywords": [
+    "doker",
+    "blog",
+    "blog",
+    "nodejs",
+    "node",
+    "js"
+  ],
+  "author": "hung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hunga9k50doker/nodejs_blog/issues"
+  },
+  "homepage": "https://github.com/Hunga9k50doker/nodejs_blog#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

@@ -1,0 +1,46 @@
+@import 'variables';
+
+h1{
+    color: red;
+}
+
+.card_courses-item{
+    margin:16px 0 0 0;
+    .card-img-top
+    .card-body{
+        display: flex; 
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-direction: column;
+        .card-title{
+            flex: 1;
+        }
+        .card-text{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+      }
+}
+
+.nav-link{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-link img{
+    display: flex;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid rgb(22, 189, 106);
+}
+
+.check-select-all-options{
+    width: 200px ;
+    margin:0 16px;
+}

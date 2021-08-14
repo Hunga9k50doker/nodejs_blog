@@ -1,0 +1,45 @@
+<div class="mt-4">
+    <h3>Khóa học của tôi</h3>
+    <table class="table">
+    <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Tên khóa học</th>
+                <th scope="col">Trình độ</th>
+                <th scope="col" colspan="4">Thời gian tạo</th>
+            </tr>
+    </thead>
+    <tbody>
+        {{#each courses}}
+            <tr>
+                <th scope="row">{{sum @index 1}}</th>
+                <td>{{this.name}}</td>
+                <td>{{this.level}}</td>
+                <td>{{this.createdAt}}</td>
+                <td><a href="/courses/{{this._id}}/edit" class="btn btn-link">Sửa</a></td>
+                <td><a href="" class="btn btn-link" data-toggle="modal" data-target="delete-mo">Xóa</a></td>
+
+            </tr>
+       {{/each}}
+    </tbody>
+    <div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </table>
+</div>

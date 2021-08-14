@@ -1,0 +1,18 @@
+<div class="mt-4">
+    <div class="row">
+{{!-- loop array --}}
+        {{#each course}}
+        <div class="col-sm-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+            <img src="{{this.img}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{this.name}}</h5>
+                <p class="card-text">{{this.description}}</p>
+                <a href="#" class="btn btn-primary">Đăng ký học</a>
+            </div>
+            </div>
+        </div>
+
+        {{/}}
+    </div>
+</div>

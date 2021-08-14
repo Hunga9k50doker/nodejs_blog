@@ -1,0 +1,4 @@
+class NewController{
+
+    //[get] /news
+}
