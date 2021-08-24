@@ -1,0 +1,60 @@
+@import 'variables';
+.showCourse{
+    transition: all 0.5s linear;
+    h2{
+        color: $orange-color;
+        font-weight: 400;
+        margin:0 auto;
+        font-size: 2.8rem;
+        opacity: 0.8;
+    }
+    button{
+        color: $white-color;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        border: none;
+        border-radius: 8px;
+        margin: 1.6rem auto;
+        background:$orange-color;
+        padding:0 24px;
+        min-width: 150px;
+        box-shadow: 0 2px 4px 0px rgba(0,0,0,0.5);
+        line-height:40px;
+        cursor: pointer;
+        &:hover{
+            transform: translateY(2px);
+            box-shadow:  0 0px 4px 0px rgba(0,0,0,0.5) ;
+        }
+    }
+    li{
+        margin:10px 0;
+        font-size: 1.2rem;
+    }
+    i{
+        margin-right: 12px;
+    }
+    .Course_index{
+        a,h5{
+            color: $orange-color;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        h1{
+            font-weight: 700;
+            font-size: 2rem;
+            margin:1.4rem 0;
+        }
+        h3{
+            margin-top: 2rem;
+        }
+    }
+
+    .Course_detail-description{
+        display:flex;
+        flex-direction: column;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+    }
+}

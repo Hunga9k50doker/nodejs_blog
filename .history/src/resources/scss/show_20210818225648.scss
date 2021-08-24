@@ -1,0 +1,34 @@
+@import 'variables';
+.showCourse{
+    transition: all 0.5s linear;
+   
+    li{
+        margin:10px 0;
+        font-size: 1.2rem;
+    }
+    i{
+        margin-right: 12px;
+    }
+    .Course_index{
+        a,h5{
+            color: $orange-color;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        h1{
+            font-weight: 700;
+            font-size: 2rem;
+            margin:1.4rem 0;
+        }
+        h3{
+            margin-top: 2rem;
+        }
+    }
+
+    .Course_detail-description{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    }
+}

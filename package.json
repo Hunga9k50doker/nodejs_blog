@@ -1,7 +1,6 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "description": "",
   "main": "src/index.js",
   "scripts": {
     "beautiful": "lint-staged",
@@ -36,12 +35,16 @@
     }
   },
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.2",
+    "jsonwebtoken": "^8.5.1",
     "method-override": "^3.0.0",
     "mogoose": "^0.0.1-security",
     "mongoose": "^5.13.5",
-    "mongoose-delete": "^0.5.3"
+    "mongoose-delete": "^0.5.3",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {
     "husky": "^7.0.1",
@@ -51,5 +54,6 @@
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12",
     "prettier": "^2.3.2"
-  }
+  },
+  "description": ""
 }

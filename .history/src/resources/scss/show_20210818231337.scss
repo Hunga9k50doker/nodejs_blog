@@ -1,0 +1,82 @@
+@import 'variables';
+.showCourse{
+    transition: all 0.5s linear;
+   
+    li{
+        margin:10px 0;
+        font-size: 1rem;
+    }
+    i{
+        margin-right: 12px;
+    }
+    .Course_index{
+        a,h5{
+            color: $orange-color;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        h1{
+            font-weight: 700;
+            font-size: 2rem;
+            margin:1.4rem 0;
+        }
+        h3{
+            margin-top: 2rem;
+        }
+    }
+    .Course_detail-video{
+        position: relative;
+        &-modal{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0,0,0,0.5);
+
+        }
+        p{
+            position: absolute;
+            bottom: 0;
+            left:50%;
+            word-break: none;
+            transform: translateX(-50%);
+            color:$white-color;
+            margin:0;
+            font-size: 1.4rem;
+            z-index: 10;
+        }
+    }
+    .Course_detail-description{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        h2{
+            color: $orange-color;
+            font-weight: 400;
+            margin-top: 1rem;
+            font-size: 2.6rem;
+            opacity: 0.8;
+        }
+        button{
+            color: $white-color;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            border: none;
+            border-radius: 8px;
+            margin: 1.6rem auto;
+            background:$orange-color;
+            padding:0 24px;
+            min-width: 150px;
+            box-shadow: 0 2px 4px 0px rgba(0,0,0,0.5);
+            line-height:40px;
+            cursor: pointer;
+            &:hover{
+                transform: translateY(2px);
+                box-shadow:  0 0px 4px 0px rgba(0,0,0,0.5) ;
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+<div class="showCourse mt-4">
+    <div class="row">
+        <div class="col-lg-9">
+            
+        </div>
+        <div class="col-lg-3">
+            <div class="Course_detail">
+                
+            </div>
+            <h1>{{course.name}}</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{course.videoId}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>{{course.description}}</p>
+            <h2>Miễn Phí</h2>
+            <button>HỌC NGAY</button>
+            <ul>
+                <li>
+                    <i class="fas fa-tachometer-alt"></i>
+                    Trình độ: {{course.level}}
+                </li>
+                <li>
+                    <i class="fas fa-film"></i>
+                    Số lượng bài học: {{course.countLesson}}
+                </li>
+                <li>
+                    <i class="fas fa-clock"></i>
+                    Thời gian học: {{course.timeLesson}}
+                </li>
+                <li>
+                    <i class="fas fa-battery-three-quarters"></i>
+                    Học mọi lúc, mọi nơi.
+                </li>
+            </ul>
+        </div>
+
+     
+    </div>
+</div>

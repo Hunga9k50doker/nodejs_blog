@@ -1,0 +1,20 @@
+@import 'variables';
+.showCourse{
+    h2{
+        display: flex;
+        color: $orange-color;
+        font-weight: 400;
+        
+    }
+    button{
+        color: $white-color;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        border: none;
+        border-radius: 16px;
+        margin: 2rem auto;
+        background:$orange-color;
+        padding:0 24px;
+    }
+}

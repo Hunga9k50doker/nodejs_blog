@@ -1,0 +1,47 @@
+<div class="showCourse mt-4">
+    <div class="row">
+        <div class="col-lg-9 col-md-9">
+            <section class="Course_index">
+                <h5><a href="/"> Khoá học</a> > {{course.name}}</h5>
+                <h1>{{course.name}}</h1>
+                <p>{{course.description}}</p>
+                <h3>Bạn sẽ học được gì?</h3>
+                <p>{{course.courseTarget}}</p>
+                <h3>Nội dung khóa học.</h3>
+                <p>{{course.courseContent}}</p>
+                <h3>Yêu cầu.</h3>
+                <p>{{course.courseRequest}}</p>
+            </section>
+        </div>
+        <div class="col-lg-3">
+            <section class="Course_detail">
+                <div class="Course_detail-video">
+                    <p>Xem giới thiệu khóa học </p>
+                    <iframe src="https://www.youtube.com/embed/{{course.videoId}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="Course_detail-description">
+                    <h2>Miễn Phí</h2>
+                    <button>HỌC NGAY</button>
+                    <ul>
+                        <li>
+                            <i class="fas fa-tachometer-alt"></i>
+                            Trình độ: {{course.level}}
+                        </li>
+                        <li>
+                            <i class="fas fa-film"></i>
+                            Số lượng bài học: {{course.countLesson}}
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            Thời gian học: {{course.timeLesson}}
+                        </li>
+                        <li>
+                            <i class="fas fa-battery-three-quarters"></i>
+                            Học mọi lúc, mọi nơi.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
