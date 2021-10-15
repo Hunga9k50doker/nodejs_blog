@@ -1,0 +1,60 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "beautiful": "lint-staged",
+    "dev": "nodemon --ins"
+    "start": "nodemon src/index.js",
+    "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Hunga9k50doker/nodejs_blog.git"
+  },
+  "keywords": [
+    "doker",
+    "blog",
+    "blog",
+    "nodejs",
+    "node",
+    "js"
+  ],
+  "author": "hung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hunga9k50doker/nodejs_blog/issues"
+  },
+  "homepage": "https://github.com/Hunga9k50doker/nodejs_blog#readme",
+  "lint-staged": {
+    "src/**/*{js,json,scss}": " prettier --single-quote --tab-width 4 --trailing-comma all --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "dotenv": "^10..0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "mogoose": "^0.0.1-security",
+    "mongoose": "^5.13.5",
+    "mongoose-delete": "^0.5.3",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
+    "mongoose-slug-generator": "^1.0.4",
+    "morgan": "^1.10.0",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2"
+  },
+  "description": ""
+}
